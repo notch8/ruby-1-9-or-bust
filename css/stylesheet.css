@@ -39,6 +39,11 @@ html>body #wrapper {
 	color: white;
 }
 
+#header .right{
+       float: right;
+       margin: 55px 55px 0 0;
+}
+
 #navigation {
 	background: #232323;
 	border-bottom: 1px solid #171717;
