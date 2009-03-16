@@ -4,7 +4,7 @@
  <title>Ruby 1.9 Or Bust</title>
  <link href="http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/atom.xml" rel="self"/>
  <link href="http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/"/>
- <updated>2009-03-14T16:16:12-07:00</updated>
+ <updated>2009-03-16T09:27:27-07:00</updated>
  <id>http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/</id>
  <author>
    <name>Dr Nic Williams</name>
@@ -27,7 +27,7 @@
 
 &lt;h1 id='how'&gt;How&lt;/h1&gt;
 
-&lt;p&gt;I&amp;#8217;m putting myself out there to be that guy. However I still need to eat and my wife would be kind of pissed if we lost our house. So I need your help too. My goal is to be able to work 20 hours a week for the next 3 months on converting gems over. To do that I would need to get 200 of you to donate &amp;#36;45. I don&amp;#8217;t expect that to happen over night (it be cool though ;-) So in order to get started I&amp;#8217;m looking to raise &amp;#36; 3000, enough to work for 40 hours. Once that amount is raise the project will be officially on and I&amp;#8217;ll clear the time in my schedule to devote to it. If after one month we haven&amp;#8217;t made that target I&amp;#8217;ll clear time to do work for as much as we did raise. As a good faith effort I will be converting or discontinuing all of the gems I maintain in the mean time.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m putting myself out there to be that guy. However I still need to eat and my wife would be kind of pissed if we lost our house. So I need your help too. My goal is to be able to work 20 hours a week for the next 2 months on converting gems over. To do that I would need to get 400 of you to donate &amp;#36;30. I don&amp;#8217;t expect that to happen over night (it be cool though ;-) So in order to get started I&amp;#8217;m looking to raise &amp;#36;3000, enough to work for 40 hours. Once that amount is raise the project will be officially on and I&amp;#8217;ll clear the time in my schedule to devote to it. Though my current plan is to start by going through the reported failures on &lt;a href='http://isitruby19.com/'&gt;Is It Ruby 1.9&lt;/a&gt; and fixing them based on their popularity, I&amp;#8217;ve put a poll at the bottom to let you tell me how I should do this. If after one month we haven&amp;#8217;t made that target I&amp;#8217;ll clear time to do work for as much as we did raise. As a good faith effort I will be converting or discontinuing all of the gems I maintain in the mean time.&lt;/p&gt;
 
 &lt;h1 id='is_this_really_nessisary'&gt;Is This Really Nessisary&lt;/h1&gt;
 
@@ -35,7 +35,12 @@
 
 &lt;h1 id='should_i_trust_this_man'&gt;Should I Trust This Man?&lt;/h1&gt;
 
-&lt;p&gt;I&amp;#8217;ve got a history working with Ruby, I&amp;#8217;ve done Rails full time professionaly since 2005 and I run my &lt;a href='http://notch8.com'&gt;Notch8&lt;/a&gt; consulting in San Diego. I&amp;#8217;m a regular member of &lt;a href='http://sdruby.com'&gt;SDRuby&lt;/a&gt;, feel free to look at our podcast to see me speak. I have a bachlors in Computer Science and have worked in embedded C and Java. I really respect and love the Ruby community and I want to see it flourish. I promise to be very transparent and accountable with my actions. I am used to tracking my hours, to keeping a schedule and to being accountable to clients. In this project you, the community, are my client and so my time logs will be completely open to you. You will know what I have worked on and how long it has taken me.&lt;/p&gt;</content>
+&lt;p&gt;I&amp;#8217;ve got a history working with Ruby, I&amp;#8217;ve done Rails full time professionaly since 2005 and I run &lt;a href='http://notch8.com'&gt;Notch8&lt;/a&gt; consulting in San Diego. I&amp;#8217;m a regular member of &lt;a href='http://sdruby.com'&gt;SDRuby&lt;/a&gt;, feel free to look at our podcast to see me speak. I have a bachlors in Computer Science and have worked in embedded C and Java. I really respect and love the Ruby community and I want to see it flourish. I promise to be very transparent and accountable with my actions. I am used to tracking my hours, to keeping a schedule and to being accountable to clients. In this project you, the community, are my client and so my time logs will be completely open to you. You will know what I have worked on and how long it has taken me.&lt;/p&gt;
+&lt;script language='javascript' src='http://static.polldaddy.com/p/1460010.js' type='text/javascript' charset='utf-8' /&gt;&lt;noscript&gt;
+  &lt;a href='http://answers.polldaddy.com/poll/1460010/'&gt;How should I pick which gems to work on?&lt;/a&gt;
+  &lt;br /&gt;
+ &lt;span style='font-size:9px;'&gt; (&lt;a href='http://www.polldaddy.com'&gt;  surveys&lt;/a&gt;)&lt;/span&gt;
+&lt;/noscript&gt;</content>
  </entry>
  
  

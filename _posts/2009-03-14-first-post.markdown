@@ -13,7 +13,7 @@ Here is the idea.  What if instead of trying to make every project maintainer le
 
 # How #
 
-I'm putting myself out there to be that guy.  However I still need to eat and my wife would be kind of pissed if we lost our house.  So I need your help too.  My goal is to be able to work 20 hours a week for the next 2 months on converting gems over.  To do that I would need to get 400 of you to donate &#36;30.  I don't expect that to happen over night (it be cool though ;-)  So in order to get started I'm looking to raise &#36;3000, enough to work for 40 hours.  Once that amount is raise the project will be officially on and I'll clear the time in my schedule to devote to it.  My current plan is to start by going through the reported failures on [Is It Ruby 1.9](http://isitruby19.com/) and fixing them based on their popularity.  If after one month we haven't made that target I'll clear time to do work for as much as we did raise.  As a good faith effort I will be converting or discontinuing all of the gems I maintain in the mean time.
+I'm putting myself out there to be that guy.  However I still need to eat and my wife would be kind of pissed if we lost our house.  So I need your help too.  My goal is to be able to work 20 hours a week for the next 2 months on converting gems over.  To do that I would need to get 400 of you to donate &#36;30.  I don't expect that to happen over night (it be cool though ;-)  So in order to get started I'm looking to raise &#36;3000, enough to work for 40 hours.  Once that amount is raise the project will be officially on and I'll clear the time in my schedule to devote to it.  Though my current plan is to start by going through the reported failures on [Is It Ruby 1.9](http://isitruby19.com/) and fixing them based on their popularity, I've put a poll at the bottom to let you tell me how I should do this.  If after one month we haven't made that target I'll clear time to do work for as much as we did raise.  As a good faith effort I will be converting or discontinuing all of the gems I maintain in the mean time.
 
 # Is This Really Nessisary #
 
@@ -22,4 +22,11 @@ er we get all the goodness that is 1.9.  Also the sooner we don't have to mainta
 
 # Should I Trust This Man? #
 
-I've got a history working with Ruby, I've done Rails full time professionaly since 2005 and I run my [Notch8](http://notch8.com) consulting in San Diego.  I'm a regular member of [SDRuby](http://sdruby.com), feel free to look at our podcast to see me speak.  I have a bachlors in Computer Science and have worked in embedded C and Java.  I really respect and love the Ruby community and I want to see it flourish.  I promise to be very transparent and accountable with my actions.  I am used to tracking my hours, to keeping a schedule and to being accountable to clients.  In this project you, the community, are my client and so my time logs will be completely open to you.  You will know what I have worked on and how long it has taken me.
+I've got a history working with Ruby, I've done Rails full time professionaly since 2005 and I run [Notch8](http://notch8.com) consulting in San Diego.  I'm a regular member of [SDRuby](http://sdruby.com), feel free to look at our podcast to see me speak.  I have a bachlors in Computer Science and have worked in embedded C and Java.  I really respect and love the Ruby community and I want to see it flourish.  I promise to be very transparent and accountable with my actions.  I am used to tracking my hours, to keeping a schedule and to being accountable to clients.  In this project you, the community, are my client and so my time logs will be completely open to you.  You will know what I have worked on and how long it has taken me.
+
+<script type="text/javascript" charset="utf-8" language="javascript" src="http://static.polldaddy.com/p/1460010.js"></script>
+<noscript>
+  <a href ="http://answers.polldaddy.com/poll/1460010/" >How should I pick which gems to work on?</a>
+  <br/>
+ <span style="font-size:9px;"> (<a href ="http://www.polldaddy.com">  surveys</a>)</span>
+</noscript>

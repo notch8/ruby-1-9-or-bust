@@ -15,13 +15,13 @@ a[href] {
 #wrapper { /* IE workaround */
 	margin: 0 auto;
 	padding: 0;
-	width: 750px;
+	width: 840px;
 }
 html>body #wrapper {
 	margin: 0 auto;
 	padding: 0;
 	width: auto;
-	max-width: 750px;
+	max-width: 840px;
 }
 
 #header {
@@ -93,7 +93,7 @@ html>body #content {
 	width: auto;
 	height: auto;
 	max-width: 430px;
-	min-height: 584px; /* (64+2*20+2)*6 - 2 - 2*25 */
+	min-height: 1000px; /* 584 = (64+2*20+2)*6 - 2 - 2*25 */
 	background: #fff;
 }
 #content :first-child {
@@ -108,7 +108,7 @@ html>body #content {
 	padding: 0;
 	top: 0px;
 	left: 480px;
-	width: 270px;
+	width: 360px;
 	background-color: #e8eaea;
 	position: absolute;
 }
@@ -135,6 +135,10 @@ html>body #content {
 	text-decoration: underline;
 }
 
+#sidebar img{
+    padding-bottom: 20px;
+}
+
 #footer {
 	position: relative;
 	margin: 0;
@@ -147,6 +151,7 @@ html>body #content {
 #footer * {
 	margin: 0;
 	padding: 0;
+        text-align: center;
 }
 #footer a {
 	color: #b5b5b5;
