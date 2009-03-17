@@ -9,7 +9,7 @@ Usher Ruby 1.9 in to every day use by the majority of the Ruby community.
 
 # The Plan #
 
-Raise money via Pledgie to dedicate programmer Rob Kaufman to making popular gems Ruby 1.9 compatible.  Rob is writing code, championing patches and helping maintainers to release 1.9 capable versions of their gems. Or at least he will be once this project kicks off.
+Raise money via Pledgie to focus programmer Rob Kaufman on making popular gems Ruby 1.9 compatible.  Rob is writing code, championing patches and helping maintainers to release 1.9 capable versions of their gems. Or at least he will be once this project kicks off.
 
 # The Detail #
 
