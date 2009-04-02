@@ -108,6 +108,10 @@ html>body #content {
 	margin-top: 0px;
 }
 
+pre {
+  overflow : auto;
+}
+
 #feedControl {
   width : 360px;
   padding : 10px;

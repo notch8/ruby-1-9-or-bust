@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: first_post
 title: Welcome to 'Ruby 1.9 Or Bust'
 ---
 

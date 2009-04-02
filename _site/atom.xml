@@ -4,13 +4,56 @@
  <title>Ruby 1.9 Or Bust</title>
  <link href="http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/atom.xml" rel="self"/>
  <link href="http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/"/>
- <updated>2009-04-02T11:44:37-07:00</updated>
+ <updated>2009-04-02T13:37:20-07:00</updated>
  <id>http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/</id>
  <author>
    <name>Dr Nic Williams</name>
    <email>ruby-1-9-or-bustwilliams@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Installing Ruby 1.9 on OS X Leopard</title>
+   <link href="http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/2009/04/02/installing-leapord.html"/>
+   <updated>2009-04-02T00:00:00-07:00</updated>
+   <id>http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/2009/04/02/installing-leapord</id>
+   <content type="html">&lt;h1 id='pre_reqs'&gt;Pre Reqs&lt;/h1&gt;
+
+&lt;p&gt;You need XCode 3.1 or greater to install Ruby 1.9.1&lt;/p&gt;
+
+&lt;h1 id='macports'&gt;MacPorts&lt;/h1&gt;
+
+&lt;p&gt;Personally I&amp;#8217;ve found using a package manager is much simpler that trying to roll you own of everything. One of the reasons this works so well for me is that I know when to give up and compile my own package. Ruby 1.9 is in &lt;a href='http://macports.org'&gt;MacPorts&lt;/a&gt;, it is stable and that is how I install on Ruby 1.9 on the vast majority of my Macs (there are 4 that I maintain btw).&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;  sudo port install ruby19 +mactk +c_api_docs
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id='variations'&gt;Variations&lt;/h2&gt;
+
+&lt;p&gt;MacPorts has the concept of variants which are the options for your package. According to the command &amp;#8220;port variants ruby19&amp;#8221; there are the following availible:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;  ruby19 has the variants:
+      nosuffix: Don&lt;span class='err'&gt;&amp;#39;&lt;/span&gt;t add the 1.9 program suffix to the executables. Note: that makes the port conflict with ruby &lt;span class='o'&gt;(&lt;/span&gt;1.8&lt;span class='o'&gt;)&lt;/span&gt;, rb-rubygems, and rb-rake ports
+      c_api_docs: Generate documentation &lt;span class='k'&gt;for &lt;/span&gt;Ruby C API
+      tk: Build using MacPorts Tk
+      mactk: Build using MacOS X Tk Framework
+      universal: Build &lt;span class='k'&gt;for &lt;/span&gt;multiple architectures
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As you can see I like having the C API docs and using the existing MacTK framework.&lt;/p&gt;
+
+&lt;h1 id='by_hand'&gt;By Hand&lt;/h1&gt;
+
+&lt;p&gt;Maybe MacPorts makes you angry, you&amp;#8217;ve had bad luck with it in the past or you just want to compile your own. This is a totally legitimate thing to want to do. It turns out its not hard either (knock on wood)&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;  curl -O ftp://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.1-p0.tar.gz
+  tar zxfv ruby-1.9.1-p0.tar.gz
+  &lt;span class='nb'&gt;cd &lt;/span&gt;ruby-1.9.1-p0
+  ./configure --enable-shared --enable-pthread &lt;span class='nv'&gt;CFLAGS&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;-D_XOPEN_SOURCE&lt;span class='o'&gt;=&lt;/span&gt;1
+  make
+  sudo make install
+  &lt;span class='nb'&gt;echo&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;export PATH=&amp;quot;/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH&amp;quot;&amp;#39;&lt;/span&gt; &amp;gt; ~/.profile
+  &lt;span class='nb'&gt;source&lt;/span&gt; ~/.profile
+  ruby -v
+  ruby -e &lt;span class='s2'&gt;&amp;quot;puts &amp;#39;hello world&amp;#39;&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I did an install this way a few days ago. If you get stuck checkout this &lt;a href='/files/screenlog.0'&gt;Gnu Screen log&lt;/a&gt; of the install, it may help you&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Welcome to 'Ruby 1.9 Or Bust'</title>
