@@ -6,7 +6,7 @@
     <meta name="viewport" content="width = 750">
     <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Feed for Ruby 1.9 or Bust">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>Thanks</title>
   </head>
   <body id="intro">
     <div id="wrapper">
@@ -22,7 +22,7 @@
             <a href="/ruby-1-9-or-bust/">Intro</a>
           </li>
           <li id="navi_latest">
-            <a href="/ruby-1-9-or-bust{{ site.posts.last.url }}">Latest</a>
+            <a href="/ruby-1-9-or-bust/2009/03/14/first-post.html">Latest</a>
           </li>
           <li id="navi_thanks">
             <a href="/ruby-1-9-or-bust/thanks.html">Thanks</a>
@@ -31,7 +31,39 @@
       </div>
       <div id="page_body">
         <div id="content">
-          {{ content }}
+          
+<h1> Contributors </h1>
+
+<script src="http://www.google.com/jsapi/?key=ABQIAAAAAw8t1fuuPbkV2vcp1PuWhRQeLTANKqsodtOxCjnyMtlStvbbZhR5v3-5bM4a4DLOzjGAB0ZAoqpikg" type="text/javascript"></script>
+
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+
+<div id="feedControl">Loading...</div>
+
+<script type="text/javascript">
+  function loadFeedControl() {
+    var options = {
+      numResults : 100,
+      scrollOnFadeOut : false,
+      title : 'Thanks To'
+    }
+   var feed  = "http://www.pledgie.com/campaigns/3336/donations_feed";
+    var fg = new GFdynamicFeedControl(feed, "feedControl", options);
+  }
+  /**
+   * Use google.load() to load the AJAX Feeds API
+   * Use google.setOnLoadCallback() to call loadFeedControl once the page loads
+   */
+  google.load("feeds", "1");
+  google.setOnLoadCallback(loadFeedControl);
+</script>
+    
+
+<h1> Special Thanks </h1>
+
+<p>I want to say a special thanks to Gregory Brown, whose [Ruby Mendicant](http://rubymendicant.com) project was part of the insperation for this project.  I may never have believed this might work if it wasn't for you.  I want to thank [Patrick Crowley](http://mokolabs.com) and [Nick Zardozny](http://beyondthepath.com) for letting me bounce the initial idea around with them, your enthusiasim was really motivating. 
+</p>
+
         </div>
         <div id="sidebar">
           <div class="item">
@@ -41,9 +73,9 @@
               <img src="images/rss.gif"></img>
             </h4>
             <p>
-              {% for post in site.posts %} 
-                <span>{{ post.date | date_to_string }}</span> » <a href="/ruby-1-9-or-bust{{ post.url }}">{{ post.title }}</a><br>
-              {% endfor %}
+               
+                <span>14 Mar 2009</span> » <a href="/ruby-1-9-or-bust/2009/03/14/first-post.html">Welcome to 'Ruby 1.9 Or Bust'</a><br>
+              
             </p>
           </div>
           <div class="item">

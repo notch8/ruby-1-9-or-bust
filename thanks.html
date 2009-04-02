@@ -1,0 +1,36 @@
+---
+layout: default
+title: Thanks
+---
+
+<h1> Contributors </h1>
+
+<script src="http://www.google.com/jsapi/?key=ABQIAAAAAw8t1fuuPbkV2vcp1PuWhRQeLTANKqsodtOxCjnyMtlStvbbZhR5v3-5bM4a4DLOzjGAB0ZAoqpikg" type="text/javascript"></script>
+
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+
+<div id="feedControl">Loading...</div>
+
+<script type="text/javascript">
+  function loadFeedControl() {
+    var options = {
+      numResults : 100,
+      scrollOnFadeOut : false,
+      title : 'Thanks To'
+    }
+   var feed  = "http://www.pledgie.com/campaigns/3336/donations_feed";
+    var fg = new GFdynamicFeedControl(feed, "feedControl", options);
+  }
+  /**
+   * Use google.load() to load the AJAX Feeds API
+   * Use google.setOnLoadCallback() to call loadFeedControl once the page loads
+   */
+  google.load("feeds", "1");
+  google.setOnLoadCallback(loadFeedControl);
+</script>
+    
+
+<h1> Special Thanks </h1>
+
+<p>I want to say a special thanks to Gregory Brown, whose [Ruby Mendicant](http://rubymendicant.com) project was part of the insperation for this project.  I may never have believed this might work if it wasn't for you.  I want to thank [Patrick Crowley](http://mokolabs.com) and [Nick Zardozny](http://beyondthepath.com) for letting me bounce the initial idea around with them, your enthusiasim was really motivating. 
+</p>
