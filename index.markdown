@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ruby 1.9 Or Bust
+title: Index
 ---
 
 # The Goal #

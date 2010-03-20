@@ -1,5 +1,5 @@
 ---
-layout: first_post
+layout: post
 title: Welcome to 'Ruby 1.9 Or Bust'
 ---
 
@@ -22,10 +22,3 @@ I've been programming in Ruby since 2003.  I remember the transition from 1.6 to
 # Should I Trust This Man? #
 
 I've got a history working with Ruby, I've done Rails full time professionally since 2005 and I run [Notch8](http://notch8.com) consulting in San Diego.  I'm a regular member of [SDRuby](http://sdruby.com).  You can hear me speak on our podcast.  I have a bachelor's degree in Computer Science and have worked in embedded C and Java.  I really respect and love the Ruby community and I want to see it flourish.  I promise to be very transparent and accountable with my actions.  I am used to tracking my hours, to keeping a schedule and to being accountable to clients.  In this project you, the community, are my client and so my time logs will be completely open to you.  I'll be posting them each week along with blog entries and how to documents.  You will know what I have worked on and how long it has taken me.
-
-<script type="text/javascript" charset="utf-8" language="javascript" src="http://static.polldaddy.com/p/1460010.js"></script>
-<noscript>
-  <a href ="http://answers.polldaddy.com/poll/1460010/" >How should I pick which gems to work on?</a>
-  <br/>
- <span style="font-size:9px;"> (<a href ="http://www.polldaddy.com">  surveys</a>)</span>
-</noscript>

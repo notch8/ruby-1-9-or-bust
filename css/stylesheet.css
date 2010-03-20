@@ -67,8 +67,10 @@ html>body #wrapper {
 	text-decoration: none;
 }
 
-#intro		#navi_intro		a,
-#blog		#navi_blog		a,
+#Index		#navi_intro		a,
+#blog		#navi_latest		a,
+#Thanks #navi_thanks  a,
+#Contact #navi_contact a,
 #toc		#navi_manual		a,
 #chapter	#navi_manual		a,
 #wiki		#navi_wiki		a,
@@ -98,7 +100,7 @@ html>body #content {
 	width: auto;
 	height: auto;
 	max-width: 430px;
-	min-height: 1150px; /* 584 = (64+2*20+2)*6 - 2 - 2*25 */
+	min-height: 850px; /* 584 = (64+2*20+2)*6 - 2 - 2*25 */
 	background: #fff;
 }
 #content :first-child {
@@ -131,6 +133,7 @@ pre {
 	top: 0px;
 	left: 480px;
 	width: 360px;
+	height: 100%;
 	background-color: #e8eaea;
 	position: absolute;
 }

@@ -4,14 +4,14 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width = 750">
-    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Feed for Ruby 1.9 or Bust">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/syntax.css" charset="utf-8">
+    <link rel="alternate" type="application/atom+xml" href="/articles.atom" title="Feed for Ruby 1.9 or Bust">
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css" charset="utf-8">
     <title>{{ page.title }}</title>
   </head>
-  <body id="intro">
+  <body id="{{ page.title }}">
     <div id="wrapper">
-      <div id="header" onclick="javascript:window.location='/ruby-1-9-or-bust/'">
+      <div id="header" onclick="javascript:window.location='/'">
         <h1>Ruby 1.9 Or Bust</h1>
         <div class="right">
 <a href='http://www.pledgie.com/campaigns/3336'><img alt='Click here to lend your support to: Ruby 1.9 Or Bust and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/3336.png?skin_name=chrome' border='0' /></a>
@@ -20,13 +20,16 @@
       <div id="navigation">
         <ul>
           <li id="navi_intro">
-            <a href="/ruby-1-9-or-bust/">Intro</a>
+            <a href="/">Intro</a>
           </li>
           <li id="navi_latest">
-            <a href="/ruby-1-9-or-bust{{ site.posts.first.url }}">Latest</a>
+            <a href="{{ site.posts.first.url }}">Latest</a>
+          </li>
+          <li id="navi_contact">
+            <a href="/contact.html">Contact</a>
           </li>
           <li id="navi_thanks">
-            <a href="/ruby-1-9-or-bust/thanks.html">Thanks</a>
+            <a href="/thanks.html">Thanks</a>
           </li>
         </ul>
       </div>
@@ -43,7 +46,7 @@
             </h4>
             <p>
               {% for post in site.posts %} 
-                <span>{{ post.date | date_to_string }}</span> » <a href="/ruby-1-9-or-bust{{ post.url }}">{{ post.title }}</a><br>
+                <span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}">{{ post.title }}</a><br>
               {% endfor %}
             </p>
           </div>
@@ -52,9 +55,6 @@
           </div>
           <div class="item">
             <img src="images/8535.png"></img>
-          </div>
-          <div id="poll" class="item">
-            <script type="text/javascript" charset="utf-8" language="javascript" src="http://static.polldaddy.com/p/1460010.js"></script><noscript> <a href ="http://answers.polldaddy.com/poll/1460010/" >How should I pick which gems to work on?</a>  <br/> <span style="font-size:9px;"> (<a href ="http://www.polldaddy.com">  surveys</a>)</span></noscript>
           </div>
       </div>
       <div id="footer">
