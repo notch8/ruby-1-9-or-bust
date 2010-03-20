@@ -4,21 +4,13 @@
  <title>Ruby 1.9 Or Bust</title>
  <link href="http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/atom.xml" rel="self"/>
  <link href="http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/"/>
- <updated>2010-03-19T18:32:34-07:00</updated>
+ <updated>2010-03-20T10:59:38-07:00</updated>
  <id>http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/</id>
  <author>
    <name>Dr Nic Williams</name>
    <email>ruby-1-9-or-bustwilliams@gmail.com</email>
  </author>
 
- 
- <entry>
-   <title>Not Dead</title>
-   <link href="http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/2010/03/22/not-dead.html"/>
-   <updated>2010-03-22T00:00:00-07:00</updated>
-   <id>http://ruby-1-9-or-bust.github.com/ruby-1-9-or-bust/2010/03/22/not-dead</id>
-   <content type="html">&lt;p&gt;Poll Results Total votes: 223 Using the Rubyforge popularity list (http://gems.rubyforge.org/stats.html) 27% (61 votes) Starting with Rails and working way down dependancy stack 38% (85 votes) Starting with Merb and working way down dependancy stack 7% (16 votes) Based on reports of failure on Isitruby19.com 25% (55 votes) Other: 3% (6 votes)&lt;/p&gt;</content>
- </entry>
  
  <entry>
    <title>Deploying Rails on Ruby 1.9</title>
