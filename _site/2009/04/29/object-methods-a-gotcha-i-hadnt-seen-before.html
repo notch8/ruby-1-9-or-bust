@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width = 750">
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css" charset="utf-8">
+    <link rel="alternate" type="application/atom+xml" href="/articles.atom" title="Feed for Ruby 1.9 or Bust">
+    <title>Object.methods - A Gotcha I Hadn't Seen Before</title>
+  </head>
+  <body id="blog">
+    <div id="wrapper">
+      <div id="header" onclick="javascript:window.location='/'">
+        <h1>Ruby 1.9 Or Bust</h1>
+        <div class="right">
+<a href='http://www.pledgie.com/campaigns/3336'><img alt='Click here to lend your support to: Ruby 1.9 Or Bust and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/3336.png?skin_name=chrome' border='0' /></a>
+        </div>
+      </div>
+      <div id="navigation">
+        <ul>
+          <li id="navi_intro">
+            <a href="/">Intro</a>
+          </li>
+          <li id="navi_latest">
+            <a href="/2010/03/22/not-dead.html">Latest</a>
+          </li>
+          <li id="navi_contact">
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li id="navi_thanks">
+            <a href="/thanks.html">Thanks</a>
+          </li>
+        </ul>
+      </div>
+      <div id="page_body">
+        <div id="content">
+          <p>There are many posts about String.each, the new block shadowing and even a post or two about some of the C level changes.</p>
+
+<p>However I had not seen anyone point out this little change that could affect certain meta-programming situations. Calling .methods returns a list of all the methods which a certain object or class responds to.</p>
+
+<p>For the most part this is only useful in IRB. I often call</p>
+<div class='highlight'><pre><code class='ruby'>  <span class='n'>test_object</span><span class='o'>.</span><span class='n'>methods</span> <span class='o'>-</span> <span class='no'>Object</span><span class='o'>.</span><span class='n'>methods</span>
+</code></pre>
+</div>
+<p>when I can&#8217;t remember a method name.</p>
+
+<p>The change between Ruby 1.8 and Ruby 1.9 is that .methods now returns an array of symbols where in 1.8 it returned an array of strings. For the most part no problem, but something to be aware of. .respond_to? appears to still take either a string or a symbol, so if you&#8217;re just checking an object do this:</p>
+<div class='highlight'><pre><code class='ruby'>  <span class='n'>object</span><span class='o'>.</span><span class='n'>respond_do</span><span class='p'>(</span><span class='ss'>:method</span><span class='p'>)</span>
+</code></pre>
+</div>
+<p>instead of:</p>
+<div class='highlight'><pre><code class='ruby'>  <span class='n'>object</span><span class='o'>.</span><span class='n'>methods</span><span class='o'>.</span><span class='n'>include?</span><span class='p'>(</span><span class='s2'>&quot;method&quot;</span><span class='p'>)</span>
+</code></pre>
+</div>
+                    
+          <script type="text/javascript">var disqus_url = "http://ruby19orbust.com/"; var disqus_title ="";</script>
+          <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/ruby-1-9-or-bust/embed.js"></script>
+          <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+          <script type="text/javascript">
+          //<![CDATA[
+          (function() {
+          		var links = document.getElementsByTagName('a');
+          		var query = '?';
+          		for(var i = 0; i < links.length; i++) {
+          			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+          				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          			}
+          		}
+          		document.write('<script type="text/javascript" src="http://disqus.com/forums/ruby-1-9-or-bust/get_num_replies.js' + query + '"></' + 'script>');
+          	})();
+          //]]>
+          </script>
+          
+        </div>
+        <div id="sidebar">
+          <div class="item">
+            <!-- Blog   -->
+            <h4>
+              <a href="../../../atom.xml" id="rss_feed" name="rss_feed">Blog Post Feed</a>
+              <img src="../../../images/rss.gif"></img>
+            </h4>
+            <p>
+               
+                <span>22 Mar 2010</span> » <a href="/2010/03/22/not-dead.html">Not Dead</a><br>
+               
+                <span>06 May 2009</span> » <a href="/2009/05/06/deploying-rails-on-ruby-1-9.html">Deploying Rails on Ruby 1.9</a><br>
+               
+                <span>29 Apr 2009</span> » <a href="/2009/04/29/object-methods-a-gotcha-i-hadnt-seen-before.html">Object.methods - A Gotcha I Hadn't Seen Before</a><br>
+               
+                <span>19 Apr 2009</span> » <a href="/2009/04/19/installing-on-ubuntu.html">Installing on Ubuntu</a><br>
+               
+                <span>02 Apr 2009</span> » <a href="/2009/04/02/installing-leapord.html">Installing Ruby 1.9 on OS X Leopard</a><br>
+               
+                <span>14 Mar 2009</span> » <a href="/2009/03/14/first-post.html">Welcome to 'Ruby 1.9 Or Bust'</a><br>
+              
+            </p>
+          </div>
+          <div class="item">
+            <script type="text/javascript" src="http://disqus.com/forums/ruby-1-9-or-bust/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
+          </div>
+          <div class="item">
+            <img src="../../../images/8535.png"></img>
+          </div>
+          <div class="item">
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <p><a href="http://notch8.com">A Notch8 endeavor</a> | <a href="http://github.com/notch8/ruby-1-9-or-bust/tree/gh-pages" title="ruby-1-9-or-bust's ruby-1-9-or-bust at gh-pages &mdash; GitHub">website source</a> | generated by <a href="http://github.com/mojombo/jekyll">jekyll</a> and <a href="http://drnic.github.com/jekyll_generator">jekyll_generator</a></p>
+      </div>
+    </div>
+  </body>
+</html>
